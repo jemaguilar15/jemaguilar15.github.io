@@ -1,0 +1,664 @@
+@import '_global';
+
+@media screen and (max-width: 599px) {
+    section  {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+            .section-container {
+                width: 80%;
+                margin: 3rem auto;
+
+                .tagline {
+                    margin: 1rem 0;
+                }
+
+                .p-tagline-container {
+
+                    padding: 1rem 0;
+
+                    .p-headline {
+                        font-size: 1.125rem;
+                        text-indent: 3rem;
+                        text-align: justify;
+                        line-height: 2rem;
+                    }
+
+                    .certificate-container {
+
+                        .certificate-title {
+                            margin: 1rem auto;
+                        }
+                        .p-tagline {   
+                            font-size: 1.125rem;
+                            text-indent: 3rem;
+                            text-align: justify;
+                            line-height: 2rem;
+
+                            a.url-site {
+                                color: $color5;
+                                font-weight: 800;
+                            }
+
+                            .view {
+                                a {
+                                    color: $color5;
+                                    font-weight: 800;
+                                }
+                            }
+
+                            .view:hover {
+                                a {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+                .form-control-container {
+                    .form-container {
+                        ::placeholder {
+                            color: $color4;
+                        }
+                        margin: 0 auto; 
+                        
+                        input, textarea, button {
+                            font-family: $fontStyle_1;
+                            font-size: 1rem;
+                            border-radius: 4px;
+                            border: none;
+                            margin: 1rem 0;
+                            outline: none;
+                        }
+    
+                        input, textarea {
+                            background-color: $color2;
+                            
+                            padding: 1rem;
+                            width: 100%;
+    
+                        }
+    
+                        input:focus, textarea:focus {
+                            box-shadow: 0 0 2px 1px $color4;
+                        }
+    
+                        button {
+                            background-color: $color5;
+                            color: $color1;
+                            cursor: pointer;
+                            padding: 1rem;
+                            width: 100%;
+                        }
+    
+                        button:hover {
+                            background-color: $color4;
+                        }
+    
+                        textarea {
+                            resize: none;
+                        }
+                    }
+
+                    .form-side-container {
+                        display: none;
+                    }
+                }
+                
+
+                .grid-social-media {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    // justify-content: space-between;
+
+                    .socialmedia-container {
+                        text-align: center;
+                        i {
+                            color: $color4;
+                            font-size: 3rem;
+                        }
+
+                        i:hover {
+                            color: $color5;
+                        }
+                    }
+                }  
+
+
+                .grid-section {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 1rem;
+    
+                    width: 100%;
+                    margin: 0 auto;
+    
+                    div.img-placeholder {
+                        border: 1px solid $color5;
+                        width: 100%;
+                        margin: 2rem auto;
+                        height: 120px;
+
+
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+    section  {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+            .section-container {
+                width: 80%;
+                margin: 3rem auto;
+
+                .tagline {
+                    margin: 1rem 0;
+                }
+                .p-tagline-container {
+                    padding: 1rem 0;
+
+                    .p-headline {
+                        font-size: 1.125rem;
+                        text-indent: 3rem;
+                        text-align: justify;
+                        line-height: 2rem;
+                    }
+
+                    .certificate-container {
+
+                        .certificate-title {
+                            margin: 1rem auto;
+                        }
+                        .p-tagline {   
+                            font-size: 1.125rem;
+                            text-indent: 3rem;
+                            text-align: justify;
+                            line-height: 2rem;
+
+                            a.url-site {
+                                color: $color5;
+                                font-weight: 800;
+                            }
+
+                            .view {
+                                a {
+                                    color: $color5;
+                                    font-weight: 800;
+                                }
+                            }
+
+                            .view:hover {
+                                a {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+                .form-control-container {
+                    .form-container {
+                        // background-color: orange;
+                        // width: 100%;
+                        text-align: center;
+                        ::placeholder {
+                            color: $color4;
+                        }
+                        margin: 0 auto; 
+                        
+                        input, textarea, button {
+                            font-family: $fontStyle_1;
+                            font-size: 1rem;
+                            border-radius: 4px;
+                            border: none;
+                            margin: 1rem 0;
+                            outline: none;
+                        }
+    
+                        input, textarea {
+                            background-color: $color2;
+                            
+                            padding: 1rem;
+                            width: 100%;
+    
+                        }
+    
+                        input:focus, textarea:focus {
+                            box-shadow: 0 0 2px 1px $color4;
+                        }
+    
+                        button {
+                            background-color: $color5;
+                            color: $color1;
+                            cursor: pointer;
+                            padding: 1rem;
+                            width: 60%;
+                        }
+    
+                        button:hover {
+                            background-color: $color4;
+                        }
+    
+                        textarea {
+                            resize: none;
+                        }
+                    }
+    
+                    .form-side-container {
+                        display: none;
+                    }
+                }
+            
+                .grid-social-media {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    // justify-content: space-between;
+
+                    .socialmedia-container {
+                        text-align: center;
+                        i {
+                            color: $color4;
+                            font-size: 3rem;
+                        }
+
+                        i:hover {
+                            color: $color5;
+                        }
+                    }
+                }  
+
+
+                .grid-section {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 1rem;
+    
+                    width: 100%;
+                    margin: 0 auto;
+    
+                    div.img-placeholder {
+                        border: 1px solid $color5;
+                        width: 100%;
+                        margin: 2rem auto;
+                        height: 120px;
+
+
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1360px) {
+    section  {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+            .section-container {
+                width: 80%;
+                margin: 3rem auto;
+
+                .horizontal-div {
+                    border: none;
+                    border-bottom: 2px dotted $color3;
+                    
+                    border-width: 0.3rem;
+                    width: 5%;
+                    margin: 0 auto;
+                }
+                .tagline {
+                    margin: 1rem 0;
+                }
+
+
+                .p-tagline-container {
+
+                    padding: 1rem 0;
+
+                    .p-headline {
+                        font-size: 1.125rem;
+                        text-indent: 3rem;
+                        text-align: justify;
+                        line-height: 2rem;
+                    }
+
+                    .certificate-container {
+
+                        .certificate-title {
+                            margin: 1rem auto;
+                        }
+                        .p-tagline {   
+                            font-size: 1.125rem;
+                            text-indent: 3rem;
+                            text-align: justify;
+                            line-height: 2rem;
+
+                            a.url-site {
+                                color: $color5;
+                                font-weight: 800;
+                            }
+
+                            .view {
+                                a {
+                                    color: $color5;
+                                    font-weight: 800;
+                                }
+                            }
+
+                            .view:hover {
+                                a {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+                .form-control-container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 1rem;
+                    .form-container {
+                        text-align: center;
+                        ::placeholder {
+                            color: $color4;
+                        }
+                        margin: 0 auto; 
+                        
+                        input, textarea, button {
+                            font-family: $fontStyle_1;
+                            font-size: 1rem;
+                            border-radius: 4px;
+                            border: none;
+                            margin: 1rem 0;
+                            outline: none;
+                        }
+    
+                        input, textarea {
+                            background-color: $color2;
+                            padding: 1rem;
+                            width: 100%;
+    
+                        }
+    
+                        input:focus, textarea:focus {
+                            box-shadow: 0 0 2px 1px $color4;
+                        }
+    
+                        button {
+                            background-color: $color5;
+                            color: $color1;
+                            cursor: pointer;
+                            padding: 1rem;
+                            width: 60%;
+                        }
+    
+                        button:hover {
+                            background-color: $color4;
+                        }
+    
+                        textarea {
+                            resize: none;
+                        }
+                    }
+
+                    .form-side-container {
+
+                        padding: 0 2rem;
+                        position: relative;
+                        img {     
+                            width: 100%;   
+                            position: absolute;
+                            top: 10%;
+                            left: 0;      
+                        }
+                    }
+                }
+
+                .grid-social-media {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    .socialmedia-container {
+                        text-align: center;
+                        i {
+                            color: $color4;
+                            font-size: 3rem;
+                        }
+
+                        i:hover {
+                            color: $color5;
+                        }
+                    }
+                }  
+
+                .grid-section {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 1rem;
+    
+                    width: 100%;
+                    margin: 0 auto;
+    
+                    div.img-placeholder {
+                        border: 1px solid $color5;
+                        width: 100%;
+                        margin: 2rem auto;
+                        height: 120px;
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1361px) {
+    section  {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+            .section-container {
+                width: 80%;
+                margin: 3rem auto;
+
+                .horizontal-div {
+                    border: none;
+                    border-bottom: 2px dotted $color3;
+                    
+                    border-width: 0.3rem;
+                    width: 5%;
+                    margin: 2rem auto;
+                }
+                .tagline {
+                    margin: 1rem 0;
+                }
+
+
+                .p-tagline-container {
+
+                    padding: 1rem 0;
+
+                    .p-headline {
+                        font-size: 1.125rem;
+                        text-indent: 3rem;
+                        text-align: justify;
+                        line-height: 2rem;
+                    }
+
+                    .certificate-container {
+
+                        .certificate-title {
+                            margin: 1rem auto;
+                        }
+                        .p-tagline {   
+                            font-size: 1.125rem;
+                            text-indent: 3rem;
+                            text-align: justify;
+                            line-height: 2rem;
+
+                            a.url-site {
+                                color: $color5;
+                                font-weight: 800;
+                            }
+
+                            .view {
+                                a {
+                                    color: $color5;
+                                    font-weight: 800;
+                                }
+                            }
+
+                            .view:hover {
+                                a {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+                .form-control-container {
+
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 1rem;
+                    .form-container {
+                        // background-color: blue;
+                        // padding: 0 1rem;
+                        width: 100%;
+                        text-align: center;
+                        ::placeholder {
+                            color: $color4;
+                        }
+                        margin: 0 auto; 
+                        
+                        input, textarea, button {
+                            font-family: $fontStyle_1;
+                            font-size: 1rem;
+                            border-radius: 4px;
+                            border: none;
+                            margin: 1rem 0;
+                            outline: none;
+                        }
+    
+                        input, textarea {
+                            background-color: $color2;
+                            padding: 1rem;
+                            width: 50%;
+                        }
+    
+                        input:focus, textarea:focus {
+                            box-shadow: 0 0 2px 1px $color4;
+                        }
+    
+                        button {
+                            background-color: $color5;
+                            color: $color1;
+                            cursor: pointer;
+                            padding: 1rem;
+                            width: 50%;
+                        }
+    
+                        button:hover {
+                            background-color: $color4;
+                        }
+    
+                        textarea {
+                            resize: none;
+                        }
+                    }
+
+                    .form-side-container {
+                        // background-color: orange;
+                        padding: 2rem;
+                        position: relative;
+                        img {     
+                            width: 30rem;  
+                            height: auto;
+                            // position: absolute;
+                            // top: 10%;
+                            // left: 20%;      
+                        }
+                    }
+                }
+
+                .grid-social-media {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    .socialmedia-container {
+                        text-align: center;
+                        i {
+                            color: $color4;
+                            font-size: 3rem;
+                        }
+
+                        i:hover {
+                            color: $color5;
+                        }
+                    }
+                }  
+
+                .grid-section {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 1rem;
+    
+                    width: 100%;
+                    margin: 0 auto;
+    
+                    div.img-placeholder {
+                        border: 1px solid $color5;
+                        width: 100%;
+                        margin: 2rem auto;
+                        height: 120px;
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

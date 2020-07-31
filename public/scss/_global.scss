@@ -1,0 +1,39 @@
+$fontStyle_1: 'Montserrat', sans-serif;
+$fontStyle_2: 'Raleway', sans-serif;
+
+// font colors schemes
+
+$color1: #fff;
+$color2: #f0f5f9;
+$color3: #c9d6df;
+$color4: #52616b;  
+$color5: #1e2022; 
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: $color1;
+}
+
+a:active {
+    color: $color1;
+}
+
+li {
+    list-style: none;
+}
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $color4;
+    
+}
