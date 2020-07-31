@@ -18,6 +18,9 @@ app.get('/portfolio', (req, res) => {
     res.sendFile(__dirname + "/views/portfolio.html");
 })
 
-const port = process.env.PORT || 3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 
 app.listen(port, () => console.log(`Port is running at ${port}`));
