@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@1,500&display=swap"
-        rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://kit.fontawesome.com/b8958b4245.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>John Aguilar</title>
 </head>
@@ -19,10 +21,11 @@
             <div class="container">
                 <div class="header-bg">
 
-                    <div class="grid-header">
-                        <h1><a class="title" rhref="/">John</a></h1>
+                    <div id="header" class="grid-header">
 
-                        <div class="hb-menu">
+                        <h1><a id="john" class="title" href="/">John</a></h1>
+                        <!-- hb-menu for small, medium or tablet landscape -->
+                        <div onclick="slideNav()" class="hb-menu">
                             <div class="bar-line"></div>
                             <div class="bar-line"></div>
                             <div class="bar-line"></div>
@@ -32,7 +35,7 @@
 
                             <ul class="nav-items">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
+                                <li><a href="#section-portfolio">Portfolio</a></li>
                                 <li><a href="#section-about-me">About me</a></li>
                                 <li><a href="#section-contact">Message me</a></li>
                             </ul>
@@ -41,25 +44,34 @@
 
                     </div>
 
+                    <!-- for small devices, medium or landscapes tablets -->
+                    <div class="undraw-img-sm">
+                        <div class="banner-headline">
+                            <h3>Test.</h3>
+                            <h3>Code.</h3>
+                            <h3>Repeat.</h3>
+                        </div>
+                        <img class="img-banner" src="/images/undraw_code_thinking_1jeh.svg"
+                            alt="thiniking_code_images_from_undraw">
+                    </div>
+
+                    <div class="viewsm-portfolio-container">
+                        <div class="viewsm-portfolio">
+                            <a class="linksm-portfolio" href="#section-portfolio">View Portfolio</a>
+                        </div>
+                    </div>
+
                     <div class="undraw-img">
                         <div class="undraw-img-div">
-                            <h1>Continuous Learning.</h1>
-                            <h1>Work anywhere.</h1>
-                            <h1>Excitement.</h1>
+                            <h1>Code.</h1>
+                            <h1>Test.</h1>
+                            <h1>Repeat.</h1>
                         </div>
 
                         <div class="undraw-img-div">
                             <img class="undraw-img-src" src="/images/undraw_working_from_anywhere_ub67.svg" alt="">
                         </div>
-                        <!-- <p>Working from anywhere.</p> -->
                     </div>
-
-                    <div class="viewsm-portfolio-container">
-                        <div class="viewsm-portfolio">
-                            <a class="linksm-portfolio" href="/portfolio">View Portfolios</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </header>
@@ -68,22 +80,118 @@
             <div class="container">
                 <div class="section-container">
                     <hr>
-                    <h1 class="tagline">Web Development & Software Testing.</h1>
 
+                    <h1 class="tagline">Software Testing.</h1>
                     <div class="p-tagline-container">
                         <p class="p-headline">
-                            Converting your ideas to reality. Creating simple but elegant user
-                            interface with mobile-first approach for responsiveness for user experience.
-                        </p>
-                    </div>
-                    <div class="p-tagline-container">
-                        <p class="p-headline">
+                            Bugs, defects, or issue on every software products are inevitable, 100% bug free or flawless
+                            products are just myth. But we can diminish those bugs as early as possible on development.
                             Let me ensure you that I'll find all possible bugs first on your application before your
                             visitor does.
                             Defects, bugs or issues are always well-organize & documented.
                         </p>
+
+                        <p class="p-headline">
+                            Capable to automate my testing process for big and complex web application for
+                            faster feedback.
+                        </p>
+                    </div>
+
+                    <h1 class="tagline">Web Development</h1>
+
+                    <div class="p-tagline-container">
+                        <p class="p-headline">
+                            Web development is a great career option for me being a techy guy (sounds like nerd. LOL),
+                            converting your ideas to reality. Allowing me to create simple but elegant look user
+                            interface with mobile-first approach for better and seamless user experience.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="section-portfolio">
+            <div class="container">
+                <div class="section-container">
+                    <hr class="horizontal-div">
+                    <h2 class="tagline">Portfolio</h2>
+                    <div class="portfolio-container">
+
+                        <div id="web-development" class="gallery-wrapper">
+
+                            <div class="caption-title">
+                                <h3>Web Development</h3>
+                            </div>
+
+                            <div class="gallery-image">
+                                <img class="image-asset" src="/images/undraw_Devices_e67q.svg" alt="iphone-8plus">
+                                <!-- <img class="image-asset-md" src="/images/ipad2020-12.svg" alt="ipad-2020-12">
+                                <img class="image-asset-lg" src="/images/imac27-2020.svg" alt="imac27-2020"> -->
+                            </div>
+
+                            <div class="gallery-projects">
+                                <h3>References</h3>
+                                <div class="projects">
+                                    <ul>
+                                        <li><a href="https://8plvl.csb.app/">Keeper App</a></li>
+                                        <li><a href="https://whispering-falls-98650.herokuapp.com/">Todo List</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="web-development" class="gallery-wrapper">
+
+                            <div class="caption-title">
+                                <h3>Software Testing</h3>
+                            </div>
+
+                            <div class="gallery-image">
+                                <img class="image-asset" src="/images/undraw_bug_fixing_oc7a.svg" alt="iphone-8plus">
+                                <!-- <img class="image-asset-md" src="/images/testing-bugs-vector-lg.svg" alt="ipad-2020-12">
+                                <img class="image-asset-lg" src="/images/testing-bugs-vector-lg.svg" alt="imac27-2020"> -->
+                            </div>
+
+                            <div class="gallery-projects">
+                                <h3>References</h3>
+                                <div class="projects">
+                                    <ul>
+                                        <li><a href="https://github.com/jemaguilar15/Software-Testing.git">Testing
+                                                documents</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="web-development" class="gallery-wrapper">
+
+                            <div class="caption-title">
+                                <h3>Graphic Design</h3>
+                            </div>
+
+                            <div class="gallery-image">
+                                <img class="image-asset" src="/images/undraw_Logo_design_re_gfu6.svg"
+                                    alt="iphone-8plus">
+
+                            </div>
+
+                            <div class="gallery-projects">
+                                <h3>References</h3>
+                                <div class="projects">
+                                    <ul>
+                                        <li><a href="https://github.com/jemaguilar15/Graphic-Design.git">Adobe suites
+                                                portfolios</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -91,66 +199,69 @@
             <div class="container">
                 <div class="section-container">
                     <hr class="horizontal-div">
-                    <h2 class="tagline">Certificates</h1>
+                    <h2 class="tagline">Certificate</h2>
 
-                        <div class="p-tagline-container">
+                    <div class="p-tagline-container">
 
-                            <div class="certificate-container">
-                                <h3 class="certificate-title">The 2020 Web Developement Bootcamp</h3>
-                                <p class="p-tagline">
-                                    Certificate given by <a class="url-site" href="https://www.udemy.com/">Udemy</a>
-                                    after I
-                                    completed the 54-hours web
-                                    developement online
-                                    bootcamp training. Included modules are Frontend development, Backend
-                                    development, Database, Application Program Interface (API), Security, React and etc.
-                                    <span class="view"><a
-                                            href="/certificates/Udemy-Certification Web Development 2020.pdf">View
-                                            Certificate</a></span>
-                                </p>
-                            </div>
-
-                            <div class="p-tagline-container">
-                                <div class="certificate-container">
-                                    <h3 class="certificate-title">Scrum Foundation Professional Certificate (SFPC)</h3>
-                                    <p class="p-tagline">
-                                        Certificate given by <a class="url-site"
-                                            href="https://certiprof.com/">Certiprof</a>
-                                        after I
-                                        passed the SFPC Exam. Objectives of this certification is to have aspirants
-                                        scrum
-                                        masters, product owners, or anyone who want to implement an Agile to improve
-                                        there
-                                        traditional project management, particularly using Scrum, Scrum practices, Scrum
-                                        process, concepts, and many more.
-                                        <span class="view"><a href="/certificates/Certificate.pdf">View
-                                                Certificate</a></span>
-                                    </p>
-
-                                    <!-- Add later view certificate images -->
-                                </div>
-
-                                <div class="certificate-container">
-                                    <h3 class="certificate-title">Scrum Fundamentals Certfied (FCS)</h3>
-                                    <p class="p-tagline">
-                                        Certificate I've received after completing Scrum Fundamentals Certified online
-                                        given
-                                        by
-                                        <a class="url-site" href="https://www.scrumstudy.com/">SCRUMstudy</a>. Modules
-                                        are
-                                        overview and
-                                        fundamentals of Scrum framework, Scrum vs.
-                                        Traditional project management, and etc.
-                                        <span class="view"><a
-                                                href="/certificates/course-certificates-SCRUMstudy_John Emmanuel Aguilar.pdf">View
-                                                Certificate</a></span>
-                                    </p>
-
-                                    <!-- Add later view certificate images -->
-                                </div>
-                            </div>
+                        <div class="certificate-container">
+                            <h3 class="certificate-title">The 2020 Web Developement Bootcamp</h3>
+                            <p class="p-tagline">
+                                Certificate given by <a class="url-site" href="https://www.udemy.com/">Udemy</a>
+                                after I
+                                completed the 54-hours web
+                                developement online
+                                bootcamp training. Included modules are Frontend development, Backend
+                                development, Database, Application Program Interface (API), Security, React and etc.
+                                <span class="view"><a
+                                        href="/certificates/Udemy-Certification Web Development 2020.pdf">View
+                                        Certificate</a></span>
+                            </p>
                         </div>
+
+
+                        <div class="certificate-container">
+                            <h3 class="certificate-title">Scrum Foundation Professional Certificate (SFPC)</h3>
+                            <p class="p-tagline">
+                                Certificate given by <a class="url-site" href="https://certiprof.com/">Certiprof</a>
+                                after I
+                                passed the SFPC Exam. Objectives of this certification is to have aspirants
+                                scrum
+                                masters, product owners, or anyone who want to implement an Agile to improve
+                                there
+                                traditional project management, particularly using Scrum, Scrum practices, Scrum
+                                process, concepts, and many more.
+                                <span class="view"><a href="/certificates/Certificate.pdf">View
+                                        Certificate</a></span>
+                            </p>
+
+                            <!-- Add later view certificate images -->
+                        </div>
+
+
+                        <div class="certificate-container">
+                            <h3 class="certificate-title">Scrum Fundamentals Certfied (FCS)</h3>
+                            <p class="p-tagline">
+                                Certificate I've received after completing Scrum Fundamentals Certified
+                                online
+                                given
+                                by
+                                <a class="url-site" href="https://www.scrumstudy.com/">SCRUMstudy</a>.
+                                Modules
+                                are
+                                overview and
+                                fundamentals of Scrum framework, Scrum vs.
+                                Traditional project management, and etc.
+                                <span class="view"><a
+                                        href="/certificates/course-certificates-SCRUMstudy_John Emmanuel Aguilar.pdf">View
+                                        Certificate</a></span>
+                            </p>
+
+                            <!-- Add later view certificate images -->
+                        </div>
+                    </div>
                 </div>
+            </div>
+
         </section>
 
         <section id="section-about-me">
@@ -177,6 +288,12 @@
                                 Technology. I began creating and developing websites, studying other foreign language,
                                 and reading books.
                             </p>
+
+                            <p class="p-headline">
+                                Do you want to work with me? Feel free to email me and download my <span
+                                    class="resume-link"><a href="/assets/JohnEmmanuelAguilar_Resume.docx"
+                                        download>resume.</a></span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -187,15 +304,17 @@
             <div class="container">
                 <div class="section-container">
                     <hr class="horizontal-div">
-                    
 
                     <div class="form-control-container">
                         <div class="form-container">
-                            <h2 class="contact-header">Message me</h2>
-                            <form action="/post" method="post">
-                                <input type="text" name="" id="" placeholder="Name">
-                                <input type="text" name="" id="" placeholder="Email">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <h2 class="tagline">Message me</h2>
+                            <form id="contat-form" action="/" method="post">
+                                <!-- <input type="text" name="senderName" id="" placeholder="Name"> -->
+                                <input type="email" name="emailAddress" id="" placeholder="youremail@example.com"
+                                    required>
+                                <input type="text" name="emailSubject" id="" placeholder="Subject">
+                                <textarea name="emailMessage" id="" cols="30" rows="10" placeholder="Message"
+                                    required></textarea>
                                 <button type="submit">Submit</button>
                             </form>
                         </div>
@@ -227,7 +346,7 @@
                             <h3 class="footer-nav-title">Navigate</h3>
                             <ul class="footer-nav">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
+                                <li><a href="#section-portfolio">Portfolio</a></li>
                                 <li><a href="#section-about-me">About me</a></li>
                                 <li><a href="#section-contact">Message me</a></li>
                             </ul>
@@ -236,18 +355,17 @@
                         <div class="footer-copyright">
 
                             <div class="footer-others">
+
                                 <div class="socialmedia-container">
-                                    <a href=""><i class="fab fa-google-plus-g"></i></a>
-                                </div>
-                                <div class="socialmedia-container">
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://linkedin.com/in/johnemmanuel-aguilar" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
                                 </div>
 
                                 <div class="socialmedia-container">
-                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/jemaguilr/" target="_blank"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="socialmedia-container">
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com/JhmAglr" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 </div>
 
                             </div>
@@ -261,8 +379,10 @@
         </footer>
 
     </div>
+    <script src="/js/animation.js"></script>
+    <script src="#" crossorigin="anonymous" SameSite="None Secure"></script>
 
-    <script src="js/animation.js"></script>
+
 
 </body>
 

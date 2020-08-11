@@ -1,5 +1,5 @@
 @import '_global';
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 420px) {
     footer {
         .container {
             .footer-container {
@@ -13,7 +13,7 @@
                     text-align: center;
                     .footer-title {
                         color: $color1;
-                        // margin-top: 1rem;
+                        font-size: 1.5rem;
                         padding-bottom: 2rem;
                     }
                     hr {
@@ -44,7 +44,7 @@
                                 padding: 0.7rem 0.5rem;
 
                                 a {
-                                    font-size: 1.125rem;
+                                    font-size: 0.8rem;
                                 }
                             }
         
@@ -66,13 +66,16 @@
                             width: 50%;
                             margin: 0 auto;
                             display: grid;
-                            grid-template-columns: repeat(4, 1fr);
-                            padding: 1rem;
+                            grid-template-columns: repeat(3, 1fr);
+                            // padding: 0.5rem 1rem;
+
                             .socialmedia-container {
+                                // padding: 0 1rem;
                                 text-align: center;
+                                // margin: 0 1rem;
                                 i {
                                     color: $color1;
-                                    font-size: 2rem;
+                                    font-size: 1.1rem;
                                 }
     
                                 i:hover {
@@ -87,21 +90,21 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 421px) and (max-width: 999px) {
     footer {
         .container {
             .footer-container {
                 background-color: $color5;
                 padding: 1rem 0;
                 width: 100%;
-                .footer-title-container {  
+                .footer-title-container {
                     
                     width: 80%;
                     margin: 2rem auto;
                     text-align: center;
-
                     .footer-title {
                         color: $color1;
+                        font-size: 1.5rem;
                         padding-bottom: 2rem;
                     }
                     hr {
@@ -110,30 +113,29 @@
                         
                     }
                 }
-
-
                 .grid-footer {
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    
+                    grid-template-columns: 1fr;
+                    justify-content: space-between;
                     width: 80%;
                     margin: 0 auto;
         
                     .footer-nav-menu {
+
                         text-align: center;
                         width: 100%;
                         margin: 0 auto;
-                        h3 {
+                        .footer-nav-title {
                             color: $color1;
                         }
                         ul.footer-nav {
                             padding: 1rem 0;
                             li {
 
-                                padding: 0.7rem 0;
+                                padding: 0.7rem 0.5rem;
 
                                 a {
-                                    font-size: 1rem;
+                                    font-size: 0.8rem;
                                 }
                             }
         
@@ -142,8 +144,8 @@
         
                     .footer-copyright {
 
-                        width: 100%;
-                        // margin: 0.5rem auto;
+                        width: 70%;
+                        margin: 0.5rem auto;
                         padding: 1rem 0;
                         text-align: center;
                         p {
@@ -152,15 +154,18 @@
                         }
 
                         .footer-others {
+                            
+                            width: 50%;
                             margin: 0 auto;
+                            padding: 0 2rem;
                             display: grid;
-                            grid-template-columns: repeat(4, 1fr);
-                            padding: 1rem;
+                            grid-template-columns: repeat(3, 1fr);
+                            
                             .socialmedia-container {
                                 text-align: center;
                                 i {
                                     color: $color1;
-                                    font-size: 2rem;
+                                    font-size: 1.1rem;
                                 }
     
                                 i:hover {
@@ -245,7 +250,7 @@
                             width: 50%;
                             margin: 0 auto;
                             display: grid;
-                            grid-template-columns: repeat(4, 1fr);
+                            grid-template-columns: repeat(3, 1fr);
                             
                             padding: 1rem;
                             .socialmedia-container {
@@ -337,7 +342,7 @@
                             width: 50%;
                             margin: 0 auto;
                             display: grid;
-                            grid-template-columns: repeat(4, 1fr);
+                            grid-template-columns: repeat(3, 1fr);
                             
                             padding: 1rem;
                             .socialmedia-container {

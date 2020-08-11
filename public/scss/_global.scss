@@ -1,6 +1,8 @@
 $fontStyle_1: 'Montserrat', sans-serif;
 $fontStyle_2: 'Raleway', sans-serif;
 
+// $dir: '/assets/';
+
 // font colors schemes
 
 $color1: #fff;
@@ -37,3 +39,20 @@ hr {
     border-top: 1px solid $color4;
     
 }
+
+p {
+    margin-bottom: 1rem;
+}
+@mixin transform-center {
+    position: absolute;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// @mixin fontface() {
+//     @font-face {
+//         font-family: montserrat;
+//         src: url('#{$dir}') format('ttf');
+//    }
+// }

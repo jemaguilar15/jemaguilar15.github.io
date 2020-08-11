@@ -5,8 +5,13 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: montserrat;
+    src: ('./assets/Montserrat-Black.ttf');
+}
+
 body {
-    font-family: $fontStyle_1;
+    font-family: 'montserrat', $fontStyle_1, $fontStyle_2;
 }
 
 .container-fluid {
