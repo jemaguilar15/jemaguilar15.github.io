@@ -29,7 +29,7 @@ app.post("/", (req, res) => {
   const nodemailerMailgun = nodemailer.createTransport(mg(auth));
   nodemailerMailgun.sendMail({
     from: `sender: <${emailAddress}>`,
-    to: "design.johnaguilar@gmail.com",
+    to: process.env.RECIPIENT,
     subject: emailSubject,
     text: emailMessage
   }, (err, data) => {
