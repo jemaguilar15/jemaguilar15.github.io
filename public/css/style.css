@@ -667,6 +667,7 @@ p {
     padding: 1rem;
   }
   section .container .section-container .portfolio-container .gallery-wrapper {
+    padding: 1rem 0;
     position: relative;
     text-align: center;
   }

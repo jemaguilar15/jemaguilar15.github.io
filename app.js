@@ -25,10 +25,10 @@ const auth = {
 
 app.post("/", (req, res) => {
   const { emailAddress, emailSubject, emailMessage } = req.body;
-  console.log(req.body);
+  // console.log(req.body);
   const nodemailerMailgun = nodemailer.createTransport(mg(auth));
   nodemailerMailgun.sendMail({
-    from: `sender: <${emailAddress}>`,
+    from: `Excited client <${emailAddress}>`,
     to: process.env.RECIPIENT,
     subject: emailSubject,
     text: emailMessage
